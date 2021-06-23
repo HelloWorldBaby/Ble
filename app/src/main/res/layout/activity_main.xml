@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="蓝牙sdk初始化状态"
-        app:layout_constraintTop_toBottomOf="@id/tv_jiede_init"
+        app:layout_constraintTop_toBottomOf="@id/tv_vin_car"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 

@@ -21,7 +21,8 @@
     <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
     <uses-permission android:name="android.permission.PHONE_STATE" /> <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
     <uses-feature android:name="android.hardware.location.gps" />
-    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -60,15 +61,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JieDeDemo"
         tools:replace="android:name">
-        <activity android:name=".LocalKeyListActivity"></activity>
-        <activity android:name=".DoCheckListActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".BorrowCarActivity"></activity>
+        <activity android:name=".ChooseTypeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LocalKeyListActivity" />
+        <activity android:name=".DoCheckListActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

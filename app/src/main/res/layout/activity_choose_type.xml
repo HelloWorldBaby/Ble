@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseTypeActivity">
+
+    <TextView
+        android:id="@+id/tv_chezhu"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是车主"/>
+
+    <Button
+        android:layout_marginTop="@dimen/dp_15"
+        android:id="@+id/btn_chezhu_kongche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chezhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要控车"/>
+    <Button
+        android:layout_marginTop="@dimen/dp_15"
+        android:id="@+id/btn_chezhu_jieche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_chezhu_kongche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要控车"/>
+
+    <TextView
+        android:id="@+id/tv_jiecheren"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_chezhu_jieche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是借车人"/>
+
+    <Button
+        android:layout_marginTop="@dimen/dp_15"
+        android:id="@+id/btn_jiecheren_kongche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_jiecheren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要控车"/>
+    <Button
+        android:layout_marginTop="@dimen/dp_15"
+        android:id="@+id/btn_jiecheren_jieche"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_jiecheren_kongche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要借车"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -113,25 +113,6 @@ public class JiedeSdkUtils {
      */
     public void applykey(VKeyInfo vKeyInfo) {
         //实例化成功
-//                    //申请钥匙
-        vKeyInfo.setKeyType(String.valueOf(VKeyType.OWNER));
-        vKeyInfo.setTimeStart(System.currentTimeMillis() + "");
-        vKeyInfo.setTimeStop((System.currentTimeMillis() + 1576800000000L) + "");//当前时间20年后
-        vKeyInfo.setAuthType(AuthType.DOOR + "");
-        vKeyInfo.setLimitType(LimitType.INTERVAL + "");
-        vKeyInfo.setLimitCounts(100 + "");
-        vKeyInfo.setSignerId(userIdHashData);
-        vKeyInfo.setUserToken(userToken);
-        vKeyInfo.setVin("LNBSCCAK1MD824849");
-        //非必
-        vKeyInfo.setName("aaa");//用户名
-        vKeyInfo.setCertId("");//证书唯一标示值
-        vKeyInfo.setCarId("");//车辆唯一标示值
-        vKeyInfo.setSerialNumber("");//钥匙唯一序列号
-        vKeyInfo.setCarlicense("");//车辆号牌
-        vKeyInfo.setUserId("");//userId
-        vKeyInfo.setSignerType(SignerType.OWNER + "");//批复者类型
-        applykey(vKeyInfo);
         gdVkeySdkInst.getRemoteKeyMngInst().reqVkey(vKeyInfo, new RemoteCallback<ResponseReqVkey>() {
             @Override
             public void onResponse(ResponseReqVkey responseReqVkey) {

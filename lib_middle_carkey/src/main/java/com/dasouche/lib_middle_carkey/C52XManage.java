@@ -40,9 +40,6 @@ public class C52XManage {
     private C52XManage(Context context) {
         mContext = context;
     }
-//    public void setC52StateListener(C52StateListener c52StateListener) {
-//        this.c52StateListener = c52StateListener;
-//    }
 
     /**
      * 初始化两个sdk
@@ -105,6 +102,13 @@ public class C52XManage {
             //三种钥匙都没有，进行申请钥匙操作,参数暂时写死
             JiedeSdkUtils.getInstance().applykey(new VKeyInfo());
         }
+    }
+
+    /**
+     * @param vKeyInfo 申请车钥匙参数
+     */
+    public void applyKey(VKeyInfo vKeyInfo){
+        JiedeSdkUtils.getInstance().applykey(vKeyInfo);
     }
 
     /**
