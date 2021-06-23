@@ -1,0 +1,6 @@
+rootProject.name = "JieDeDemo"
+include ':app'
+include ':lib_middle_carkey'
+include ':gd_virtualKey_publish_https_release_ver2.0.0_202102240814'
+include ':kppsdkv2.2.0.19-17-gf7f4cd8-default-release'
+include ':TAMA_SDK-release'

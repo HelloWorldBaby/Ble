@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uauth_hint_already_bind">本應用場景已綁定過...</string>
+    <string name="uauth_hint_already_bind_and_pwd_invalid">秘鑰已存在，輸入密碼不匹配，可刪除後重試</string>
+    <string name="uauth_hint_authenticate_error">操作錯誤</string>
+    <string name="uauth_hint_authenticate_failed_and_need_to_check_log">認證失敗, 查看日誌獲得更多錯誤信息...</string>
+    <string name="uauth_hint_authenticate_retry">認證失敗，請重試</string>
+    <string name="uauth_hint_authenticate_success">指紋認證成功</string>
+    <string name="uauth_hint_authenticating">正在認證...</string>
+    <string name="uauth_hint_binding">正在綁定...</string>
+    <string name="uauth_hint_different_pwd_error">兩次輸入密碼不壹致</string>
+    <string name="uauth_hint_failed_too_many_times">失敗次數過多</string>
+    <string name="uauth_hint_input_new_password">請輸入新密碼</string>
+    <string name="uauth_hint_input_new_pwd_again">請再次輸入新密碼</string>
+    <string name="uauth_hint_input_password">請輸入密碼</string>
+    <string name="uauth_hint_input_pre_password">請輸入原密碼</string>
+    <string name="uauth_hint_input_pwd_again">請再次輸入密碼</string>
+    <string name="uauth_hint_invalid_scene">秘鑰使用場景無效.</string>
+    <string name="uauth_hint_not_bind_yet">請先綁定...</string>
+    <string name="uauth_hint_not_enroll_any_fingerprint">用戶還未錄入任何指紋</string>
+    <string name="uauth_hint_prepare_key">正在準備密鑰...</string>
+    <string name="uauth_hint_prepare_key_again">生成密鑰失敗, 正在切換策略重試...</string>
+    <string name="uauth_hint_press_finger">請按指紋...</string>
+    <string name="uauth_hint_wrong_pwd">密碼錯誤!</string>
+</resources>

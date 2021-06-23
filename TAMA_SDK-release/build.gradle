@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('TAMA_SDK-release.aar'))

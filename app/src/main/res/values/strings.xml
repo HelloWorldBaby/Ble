@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Common</string>
+
+    <string name="current_internet_invalid">当前网络未连接</string>
+    <string name="sure">确认</string>
+    <string name="cancel">取消</string>
+    <string name="NoHistory">暂无新消息</string>
+    <string name="loadFailed">加载失败，请重试</string>
+    <string name="refresh">刷新</string>
+    <string name="empty_load">数据加载中，请稍后......</string>
+    <string name="sdAlert">您已经禁止了访问手机状态权限,是否现在去开启</string>
+    <string name="warmPrompt">温馨提示</string>
+    <string name="readAndWritePermission">我们需要获取存储空间和手机信息，为您存储图片等信息和保证账号安全，您是否允许?</string>
+    <string name="Agree">同意</string>
+    <string name="reject">拒绝</string>
+    <string name="debug_exclusive_text">debug专属</string>
+    <string name="userid_token_text">查看userId/token</string>
+    <string name="usermemberid_text">查看userMemberId</string>
+    <string name="switch_environment_text">切换环境</string>
+    <string name="offline_environment_text">线下环境</string>
+    <string name="online_environment_text">线上环境</string>
+    <string name="upload_log_text">上传log</string>
+    <string name="jump_to_home_text">跳转到app首页</string>
+    <string name="get_phone_info_text">获取当前手机信息</string>
+    <string name="log_stay_tuned_text">查看log(Stay tuned. . .)</string>
+    <string name="something_went_wrong_text">网络出现了一些问题，请稍后再试！</string>
+    <string name="current_network_not_good_text">当前网络不太好哦</string>
+    <string name="press_again_exit_program_text">再按一次退出程序</string>
+    <!-- ======================================================================================-->
+    <string name="not_check_protocol_text">请先阅读并同意\n用户协议及隐私协议</string>
+    <string name="open_now_text">立即开启</string>
+    <string name="to_setting_text">去设置</string>
+    <string name="you_need_to_setting_open_permission_text">您需要去应用程序设置当中手动开启权限</string>
+    <string name="network_setting_text"><u>网络设置</u></string><!--增加下划线-->
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alipay">#00a5ff</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorKeyBlank">#00000000</color>
+    <color name="colorKeyPressed">#81D4FA</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="gray_e5">#e5e5e5</color>
+    <color name="gray_gb">#dddddd</color>
+    <color name="grayc4">#c4c4c4</color>
+    <color name="graye3">#e3e7ee</color>
+    <color name="grayf9">#f9f9f9</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_3">3dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_26">26sp</dimen>
+    <dimen name="sp_42">42sp</dimen>
+    <dimen name="sp_9">9sp</dimen>
+    <string name="uauth_hint_already_bind">Has already bound.</string>
+    <string name="uauth_hint_already_bind_and_pwd_invalid">Key already exists,and input password invalid, remove binding and retry.</string>
+    <string name="uauth_hint_authenticate_error">Operation error</string>
+    <string name="uauth_hint_authenticate_failed_and_need_to_check_log">Authenticate failed, check logs for more information</string>
+    <string name="uauth_hint_authenticate_retry">Authentication failed, retry please</string>
+    <string name="uauth_hint_authenticate_success">fingerprint authentication succeeds</string>
+    <string name="uauth_hint_authenticating">Authenticating...</string>
+    <string name="uauth_hint_binding">Binding...</string>
+    <string name="uauth_hint_different_pwd_error">Different input passwords</string>
+    <string name="uauth_hint_failed_too_many_times">Too many failed times</string>
+    <string name="uauth_hint_input_new_password">Input new password</string>
+    <string name="uauth_hint_input_new_pwd_again">Input new password again</string>
+    <string name="uauth_hint_input_password">Input password</string>
+    <string name="uauth_hint_input_pre_password">Input pre password</string>
+    <string name="uauth_hint_input_pwd_again">Input password again</string>
+    <string name="uauth_hint_invalid_scene">Scene is invalid.</string>
+    <string name="uauth_hint_not_bind_yet">Please bind first</string>
+    <string name="uauth_hint_not_enroll_any_fingerprint">user has not enrolled any fingerprint in system.</string>
+    <string name="uauth_hint_prepare_key">Preparing key...</string>
+    <string name="uauth_hint_prepare_key_again">Prepare key failed, retrying...</string>
+    <string name="uauth_hint_press_finger">Please press your finger...</string>
+    <string name="uauth_hint_wrong_pwd">Wrong password!</string>
+    <style name="dialogOpenAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_pwdview_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_pwdview_out</item>
+    </style>
+    <style name="dialog_pin_theme" parent="@android:style/Theme.Dialog">
+        <!--边框-->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.4</item><!--弹框背景灰度-->
+    </style>
+    <declare-styleable name="PasswordEditText">
+        <attr format="integer" name="passwordNumber"/>
+        <attr format="dimension" name="passwordRadius"/>
+        <attr format="color" name="passwordColor"/>
+        <attr format="color" name="divisionLineColor"/>
+        <attr format="integer" name="divisionLineSize"/>
+        <attr format="color" name="bgColor"/>
+        <attr format="dimension" name="bgSize"/>
+        <attr format="integer" name="bgCorner"/>
+    </declare-styleable>
+</resources>

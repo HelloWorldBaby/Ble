@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_vin_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前车辆vin账号"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_ble_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="蓝牙sdk初始化状态"
+        app:layout_constraintTop_toBottomOf="@id/tv_jiede_init"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_haslock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本地钥匙"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_docheck"
+        app:layout_constraintTop_toBottomOf="@id/tv_ble_init" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_docheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="钥匙对账"
+        app:layout_constraintLeft_toRightOf="@id/tv_haslock"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ble_init"  />
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@id/tv_haslock"
+        android:id="@+id/rv_keyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_choosekey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择钥匙，准备开锁"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_keyList" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_ble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="链接蓝牙"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_choosekey" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_openthedoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开车门"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ble" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:text="开启状态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_openthedoor"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

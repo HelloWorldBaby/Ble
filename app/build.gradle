@@ -1,0 +1,103 @@
+plugins {
+    id 'com.android.application'
+}
+///签名文件的引入
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+android {
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId AndroidVersion.applicationId
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            // 设置支持的 SO 库构架
+            abiFilters 'armeabi', 'armeabi-v7a','x86_64','x86'
+            //, 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+    }
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled true
+            debuggable false
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            android.applicationVariants.all {
+//                variant ->
+//                    variant.outputs.all { output ->
+//                        outputFileName = AndroidVersion.appName
+//                    }
+//            }
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            zipAlignEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs project(':lib_middle_carkey').file('libs')
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    androidTestImplementation(LibraryDependency.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testImplementation(LibraryDependency.junit)
+    testImplementation(LibraryDependency.robolectric)
+    testImplementation(LibraryDependency.mockitoCore)
+    androidTestImplementation(LibraryDependency.testRunner)
+    api(LibraryDependency.material)
+    api(LibraryDependency.espressoResource)
+    testImplementation(LibraryDependency.annotationS)
+    api(LibraryDependency.appcompat)
+    api(LibraryDependency.constraintLayout)
+    api(LibraryDependency.annotationS)
+    api(LibraryDependency.constraintLayout)
+    api(LibraryDependency.supportAnnotations)
+
+    implementation project(':lib_middle_carkey')
+    implementation(LibraryDependency.permissionX)
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+}

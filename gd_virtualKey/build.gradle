@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('gd_virtualKey_publish_https_release_ver2.0.0_202102240814.aar'))
